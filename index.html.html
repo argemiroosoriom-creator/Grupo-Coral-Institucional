@@ -1,0 +1,134 @@
+xml
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grupo Coral INER Voces de Paz</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #ffffff; color: #1a3c34; }
+    header { background-color: #1a3c34; color: white; padding: 1rem 2rem; text-align: center; }
+    nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; background-color: #276749; }
+    nav ul li { margin: 0 1rem; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    h1, h2 { color: #276749; }
+    footer { background-color: #1a3c34; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    .gallery img { max-width: 100%; height: auto; margin: 0.5rem 0; }
+    form { background-color: #e6f2ee; padding: 1rem; border-radius: 8px; }
+    label { display: block; margin-top: 0.5rem; }
+    input, select, textarea { width: 100%; padding: 0.5rem; margin-top: 0.25rem; border: 1px solid #276749; border-radius: 4px; }
+    button { background-color: #276749; color: white; border: none; padding: 0.7rem 1.5rem; margin-top: 1rem; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #1a3c34; }
+</style>
+</head>
+<body>
+<header>
+  <img src="LOGO-GRUPO-CORAL.jpeg" alt="Logo Grupo Coral INER Voces de Paz" style="width: 150px; margin-bottom: 1rem;">
+  <h1>Grupo Coral INER Voces de Paz</h1>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#proposito">Propósito</a></li>
+      <li><a href="#repertorio">Repertorio</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#integrantes">Integrantes</a></li>
+      <li><a href="#noticias">Noticias</a></li>
+      <li><a href="#contacto">Contacto / Inscripción</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <section id="inicio">
+    <h2>Bienvenidos</h2>
+    <p>El <strong>Grupo Coral INER Voces de Paz</strong> promueve la integración, el talento y la convivencia a través del canto coral. ¡Únete y participa para vivir una experiencia musical única!</p>
+  </section>
+
+  <section id="proposito">
+    <h2>Propósito</h2>
+    <p>Formar integralmente a los estudiantes mediante la música coral, desarrollando habilidades artísticas, socioemocionales y valores para la convivencia pacífica en la comunidad educativa.</p>
+  </section>
+
+  <section id="repertorio">
+    <h2>Repertorio</h2>
+    <ul>
+      <li>Obra 1 - Descripción breve</li>
+      <li>Obra 2 - Descripción breve</li>
+      <li>Obra 3 - Descripción breve</li>
+      <li>Obra 4 - Descripción breve</li>
+    </ul>
+  </section>
+
+  <section id="galeria" class="gallery">
+    <h2>Galería</h2>
+    <img src="foto1.jpg" alt="Foto del coral">
+    <img src="foto2.jpg" alt="Presentación en evento">
+  </section>
+
+  <section id="integrantes">
+    <h2>Integrantes</h2>
+    <p>Argemiro Osorio Martínez - Director<br>
+       Gloria Palacio Mena - Co-Directora<br>
+       Nombre integrante 1 - Grado X<br>
+       Nombre integrante 2 - Grado Y<br>
+       ...</p>
+  </section>
+
+  <section id="noticias">
+    <h2>Noticias</h2>
+    <p>Próximos eventos y actividades del grupo coral.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto e Inscripción</h2>
+    <form id="inscripcionForm">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="grado">Grado:</label>
+      <select id="grado" name="grado" required>
+        <option value="">Seleccione un grado</option>
+        <option value="Preescolar">Preescolar</option>
+        <option value="1">1°</option>
+        <option value="2">2°</option>
+        <option value="3">3°</option>
+        <option value="4">4°</option>
+        <option value="5">5°</option>
+        <option value="6">6°</option>
+        <option value="7">7°</option>
+        <option value="8">8°</option>
+        <option value="9">9°</option>
+        <option value="10">10°</option>
+        <option value="11">11°</option>
+      </select>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" min="3" max="18" required>
+
+      <label for="contacto">Correo o teléfono:</label>
+      <input type="text" id="contacto" name="contacto" required>
+
+      <label for="experiencia">Experiencia musical (opcional):</label>
+      <textarea id="experiencia" name="experiencia" rows="3"></textarea>
+
+      <button type="submit">Enviar inscripción</button>
+    </form>
+  </section>
+</div>
+
+<footer>
+  <p>© 2025 Institución Educativa Eduardo Espitia Romero</p>
+</footer>
+
+<script>
+document.getElementById('inscripcionForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('¡Gracias por inscribirte en el Grupo Coral INER Voces de Paz!');
+    this.reset();
+});
+</script>
+
+</body>
+</html>
